@@ -2,7 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./models/product.model.js");
 const productRoute = require("./routes/product.route.js");
+const cors = require('cors');
+
+
+
 const app = express();
+
+app.use(cors());
 
 // middleware
 app.use(express.json());
@@ -22,7 +28,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://haris2iftikhar:GClTzr15XhkjvN6k@backenddb.nrurtot.mongodb.net/Node-API?retryWrites=true&w=majority"
+    "mongodb+srv://richard7:sAprlr0SbosjyYCd@cluster0.akgyqhz.mongodb.net/Stands"
   )
   .then(() => {
     console.log("Connected to database!");
