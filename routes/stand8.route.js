@@ -8,7 +8,7 @@ const { addStand8, getStands8 } = require('../controllers/stand8.controller.js')
 router.post("/", addStand8);
 
 // Ruta para manejar solicitudes GET en /api/getStands8
-router.get('/api/getStands8', async (req, res) => {
+router.get('/api/', getStands8, async (req, res) => {
     try {
       const stands8 = await Stand8.find({});
       const count = await Stand8.countDocuments();

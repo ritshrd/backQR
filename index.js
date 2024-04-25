@@ -9,6 +9,8 @@ const Stand5 = require("./models/stand5.model.js");
 const Stand6 = require("./models/stand6.model.js");
 const Stand7 = require("./models/stand7.model.js");
 const Stand8 = require("./models/stand8.model.js");
+const Stand9 = require("./models/stand9.model.js");
+const Stand10 = require("./models/stand10.model.js");
 
 
 const stand1Route = require("./routes/stand1.route.js");
@@ -19,6 +21,8 @@ const stand5Route = require("./routes/stand5.route.js");
 const stand6Route = require("./routes/stand6.route.js");
 const stand7Route = require("./routes/stand7.route.js");
 const stand8Route = require("./routes/stand8.route.js");
+const stand9Route = require("./routes/stand9.route.js");
+const stand10Route = require("./routes/stand10.route.js");
 
 const productRoute = require("./routes/product.route.js");
 const cors = require('cors');
@@ -45,6 +49,8 @@ app.use("/api/stand5", stand5Route);
 app.use("/api/stand6", stand6Route);
 app.use("/api/stand7", stand7Route);
 app.use("/api/stand8", stand8Route);
+app.use("/api/stand9", stand9Route);
+app.use("/api/stand10", stand10Route);
 
 
 
